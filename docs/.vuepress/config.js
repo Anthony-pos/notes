@@ -30,8 +30,16 @@ export default defineUserConfig({
         text: 'Timeline',
         link: '/timeline/',
       },
+      {
+        text: 'Git',
+        link: 'Git'
+      },
     ],
   }),
+
+  //监听文件变化，热更新
+  extraWatchFiles: [".vuepress/*.js"],
+
 
   plugins: [
     blogPlugin({
